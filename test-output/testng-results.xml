@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-22T13:11:55 CDT" name="Suite" finished-at="2022-10-22T13:11:56 CDT" duration-ms="156">
+    <groups>
+      <group name="regression">
+        <method signature="GROUP_LEVEL.tc1()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc1" class="grouping.GROUP_LEVEL"/>
+        <method signature="GROUP_LEVEL.tc4()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc4" class="grouping.GROUP_LEVEL"/>
+        <method signature="GROUP_LEVEL.tc5()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc5" class="grouping.GROUP_LEVEL"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="GROUP_LEVEL.tc2()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc2" class="grouping.GROUP_LEVEL"/>
+        <method signature="GROUP_LEVEL.tc3()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc3" class="grouping.GROUP_LEVEL"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="GROUP_LEVEL.tc()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc" class="grouping.GROUP_LEVEL"/>
+        <method signature="GROUP_LEVEL.tc1()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc1" class="grouping.GROUP_LEVEL"/>
+        <method signature="GROUP_LEVEL.tc3()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc3" class="grouping.GROUP_LEVEL"/>
+        <method signature="GROUP_LEVEL.tc4()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc4" class="grouping.GROUP_LEVEL"/>
+      </group> <!-- sanity -->
+      <group name="runall">
+        <method signature="GROUP_LEVEL.tc()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc" class="grouping.GROUP_LEVEL"/>
+        <method signature="GROUP_LEVEL.tc1()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc1" class="grouping.GROUP_LEVEL"/>
+        <method signature="GROUP_LEVEL.tc2()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc2" class="grouping.GROUP_LEVEL"/>
+        <method signature="GROUP_LEVEL.tc3()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc3" class="grouping.GROUP_LEVEL"/>
+        <method signature="GROUP_LEVEL.tc4()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc4" class="grouping.GROUP_LEVEL"/>
+        <method signature="GROUP_LEVEL.tc5()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc5" class="grouping.GROUP_LEVEL"/>
+      </group> <!-- runall -->
+    </groups>
+    <test started-at="2022-10-22T13:11:55 CDT" name="Test" finished-at="2022-10-22T13:11:56 CDT" duration-ms="156">
+      <class name="grouping.GROUP_LEVEL">
+        <test-method signature="tc()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" started-at="2022-10-22T13:11:56 CDT" name="tc" finished-at="2022-10-22T13:11:56 CDT" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc -->
+        <test-method signature="tc1()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" started-at="2022-10-22T13:11:56 CDT" name="tc1" finished-at="2022-10-22T13:11:56 CDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method signature="tc2()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" started-at="2022-10-22T13:11:56 CDT" name="tc2" finished-at="2022-10-22T13:11:56 CDT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method signature="tc3()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" started-at="2022-10-22T13:11:56 CDT" name="tc3" finished-at="2022-10-22T13:11:56 CDT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc3 -->
+        <test-method signature="tc4()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" started-at="2022-10-22T13:11:56 CDT" name="tc4" finished-at="2022-10-22T13:11:56 CDT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc4 -->
+        <test-method signature="tc5()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" started-at="2022-10-22T13:11:56 CDT" name="tc5" finished-at="2022-10-22T13:11:56 CDT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc5 -->
+      </class> <!-- grouping.GROUP_LEVEL -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
