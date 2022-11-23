@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="parallel_practice.DATA_PROVIDER_PRACTICE">
+      <class name="parallel_practice.Thread_Test">
         <methods>
-          <include name="DataMatrix"/>
+          <include name="testcase2"/>
+          <include name="testcase1"/>
         </methods>
-      </class> <!-- parallel_practice.DATA_PROVIDER_PRACTICE -->
+      </class> <!-- parallel_practice.Thread_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

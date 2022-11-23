@@ -1,60 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="2" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-22T13:11:55 CDT" name="Suite" finished-at="2022-10-22T13:11:56 CDT" duration-ms="156">
+  <suite started-at="2022-11-16T21:01:27 CST" name="Default suite" finished-at="2022-11-16T21:02:57 CST" duration-ms="90317">
     <groups>
-      <group name="regression">
-        <method signature="GROUP_LEVEL.tc1()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc1" class="grouping.GROUP_LEVEL"/>
-        <method signature="GROUP_LEVEL.tc4()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc4" class="grouping.GROUP_LEVEL"/>
-        <method signature="GROUP_LEVEL.tc5()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc5" class="grouping.GROUP_LEVEL"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="GROUP_LEVEL.tc2()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc2" class="grouping.GROUP_LEVEL"/>
-        <method signature="GROUP_LEVEL.tc3()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc3" class="grouping.GROUP_LEVEL"/>
-      </group> <!-- smoke -->
-      <group name="sanity">
-        <method signature="GROUP_LEVEL.tc()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc" class="grouping.GROUP_LEVEL"/>
-        <method signature="GROUP_LEVEL.tc1()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc1" class="grouping.GROUP_LEVEL"/>
-        <method signature="GROUP_LEVEL.tc3()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc3" class="grouping.GROUP_LEVEL"/>
-        <method signature="GROUP_LEVEL.tc4()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc4" class="grouping.GROUP_LEVEL"/>
-      </group> <!-- sanity -->
-      <group name="runall">
-        <method signature="GROUP_LEVEL.tc()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc" class="grouping.GROUP_LEVEL"/>
-        <method signature="GROUP_LEVEL.tc1()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc1" class="grouping.GROUP_LEVEL"/>
-        <method signature="GROUP_LEVEL.tc2()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc2" class="grouping.GROUP_LEVEL"/>
-        <method signature="GROUP_LEVEL.tc3()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc3" class="grouping.GROUP_LEVEL"/>
-        <method signature="GROUP_LEVEL.tc4()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc4" class="grouping.GROUP_LEVEL"/>
-        <method signature="GROUP_LEVEL.tc5()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" name="tc5" class="grouping.GROUP_LEVEL"/>
-      </group> <!-- runall -->
     </groups>
-    <test started-at="2022-10-22T13:11:55 CDT" name="Test" finished-at="2022-10-22T13:11:56 CDT" duration-ms="156">
-      <class name="grouping.GROUP_LEVEL">
-        <test-method signature="tc()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" started-at="2022-10-22T13:11:56 CDT" name="tc" finished-at="2022-10-22T13:11:56 CDT" duration-ms="19" status="PASS">
+    <test started-at="2022-11-16T21:01:27 CST" name="Default test" finished-at="2022-11-16T21:02:57 CST" duration-ms="90317">
+      <class name="parallel_practice.Thread_Test">
+        <test-method signature="testcase1()[pri:0, instance:parallel_practice.Thread_Test@4a883b15]" started-at="2022-11-16T21:01:27 CST" name="testcase1" finished-at="2022-11-16T21:01:54 CST" duration-ms="26759" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc -->
-        <test-method signature="tc1()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" started-at="2022-10-22T13:11:56 CDT" name="tc1" finished-at="2022-10-22T13:11:56 CDT" duration-ms="2" status="PASS">
+        </test-method> <!-- testcase1 -->
+        <test-method signature="testcase1()[pri:0, instance:parallel_practice.Thread_Test@4a883b15]" started-at="2022-11-16T21:01:27 CST" name="testcase1" finished-at="2022-11-16T21:01:54 CST" duration-ms="26841" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc1 -->
-        <test-method signature="tc2()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" started-at="2022-10-22T13:11:56 CDT" name="tc2" finished-at="2022-10-22T13:11:56 CDT" duration-ms="3" status="PASS">
+        </test-method> <!-- testcase1 -->
+        <test-method signature="testcase1()[pri:0, instance:parallel_practice.Thread_Test@4a883b15]" started-at="2022-11-16T21:01:27 CST" name="testcase1" finished-at="2022-11-16T21:02:52 CST" duration-ms="84737" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: unable to send message to renderer
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96b402e8b6a794fbff55db7d6da89618, get {url=https://www.rediff.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\17739\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59500/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 96b402e8b6a794fbff55db7d6da89618]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: unable to send message to renderer
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [96b402e8b6a794fbff55db7d6da89618, get {url=https://www.rediff.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\17739\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59500/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 96b402e8b6a794fbff55db7d6da89618
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+at parallel_practice.Thread_Test.testcase1(Thread_Test.java:19)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc2 -->
-        <test-method signature="tc3()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" started-at="2022-10-22T13:11:56 CDT" name="tc3" finished-at="2022-10-22T13:11:56 CDT" duration-ms="3" status="PASS">
+        </test-method> <!-- testcase1 -->
+        <test-method signature="testcase2()[pri:0, instance:parallel_practice.Thread_Test@4a883b15]" started-at="2022-11-16T21:02:52 CST" name="testcase2" finished-at="2022-11-16T21:02:57 CST" duration-ms="5373" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
+Host info: host: 'SHAZIA', ip: '192.168.1.7'
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
+Host info: host: 'SHAZIA', ip: '192.168.1.7'
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:111)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at parallel_practice.Thread_Test.testcase2(Thread_Test.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc3 -->
-        <test-method signature="tc4()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" started-at="2022-10-22T13:11:56 CDT" name="tc4" finished-at="2022-10-22T13:11:56 CDT" duration-ms="4" status="PASS">
+        </test-method> <!-- testcase2 -->
+        <test-method signature="testcase2()[pri:0, instance:parallel_practice.Thread_Test@4a883b15]" started-at="2022-11-16T21:02:52 CST" name="testcase2" finished-at="2022-11-16T21:02:55 CST" duration-ms="3202" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
+Host info: host: 'SHAZIA', ip: '192.168.1.7'
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
+Host info: host: 'SHAZIA', ip: '192.168.1.7'
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:111)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at parallel_practice.Thread_Test.testcase2(Thread_Test.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc4 -->
-        <test-method signature="tc5()[pri:0, instance:grouping.GROUP_LEVEL@4a883b15]" started-at="2022-10-22T13:11:56 CDT" name="tc5" finished-at="2022-10-22T13:11:56 CDT" duration-ms="3" status="PASS">
+        </test-method> <!-- testcase2 -->
+        <test-method signature="testcase2()[pri:0, instance:parallel_practice.Thread_Test@4a883b15]" started-at="2022-11-16T21:02:52 CST" name="testcase2" finished-at="2022-11-16T21:02:57 CST" duration-ms="5009" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
+Host info: host: 'SHAZIA', ip: '192.168.1.7'
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
+Host info: host: 'SHAZIA', ip: '192.168.1.7'
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:111)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at parallel_practice.Thread_Test.testcase2(Thread_Test.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc5 -->
-      </class> <!-- grouping.GROUP_LEVEL -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testcase2 -->
+      </class> <!-- parallel_practice.Thread_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -20,4 +20,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/main/resources/practise.xlsx</name>
+			<type>1</type>
+			<location>C:/Users/17739/Desktop/Eclipse folder/July_batch/src/main/resources/practise.xlsx</location>
+		</link>
+	</linkedResources>
 </projectDescription>
